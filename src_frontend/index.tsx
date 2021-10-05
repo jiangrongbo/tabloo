@@ -1,9 +1,9 @@
 // Needs to be imported once to enable lifecycle hooks
 import './dom_lifecycle';
 
-import { render } from 'solid-js/dom';
-import { App } from "./App";
-import { StoreBackend } from "./store_backend";
+import {render} from 'solid-js/dom';
+import {App} from "./App";
+import {StoreBackend} from "./store_backend";
 
 let store = new StoreBackend()
 
