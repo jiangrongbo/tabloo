@@ -124,6 +124,7 @@ def serve(df, open_browser, server_port=5000, server_logging=True, debug=False):
         threading.Timer(0.25, lambda: webbrowser.open(url)).start()
 
     app.run(
+        host="0.0.0.0",
         port=server_port,
         debug=debug,
         use_reloader=debug,
