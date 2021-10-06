@@ -374,7 +374,7 @@ export function TableHandler(props: {
     }
 
     async function fetchNumPages() {
-        let numPages = await store.fetchNumPages(20, props.filter)
+        let numPages = await store.fetchNumPages(20000, props.filter)
         console.log("num pages:", numPages)
         setState({
             pagination: {
